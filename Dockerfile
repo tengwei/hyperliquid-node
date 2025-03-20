@@ -22,6 +22,30 @@ WORKDIR /home/$USERNAME
 # Configure chain to testnet
 RUN echo '{"chain": "Mainnet"}' > /home/$USERNAME/visor.json
 
+RUN echo 'operator_name,root_ips
+          ASXN,20.188.6.225
+          ASXN,74.226.182.22
+          B-Harvest,57.182.103.24
+          B-Harvest,3.115.170.40
+          Nansen x HypurrCollective,46.105.222.166
+          Nansen x HypurrCollective,91.134.41.52
+          Hypurrscan,57.180.50.253
+          Hypurrscan,54.248.41.39
+          Infinite Field,52.68.71.160
+          Infinite Field,13.114.116.44
+          LiquidSpirit x Rekt Gang,199.254.199.190
+          LiquidSpirit x Rekt Gang,199.254.199.247
+          Imperator.co,45.32.32.21
+          Imperator.co,157.90.207.92
+          Enigma,148.251.76.7
+          Enigma,45.63.123.73
+          TMNT,31.223.196.172
+          TMNT,31.223.196.238
+          HyperStake,91.134.71.237
+          HyperStake,57.129.140.247' > /home/$USERNAME/override_gossip_config.json
+
+
+
 # Import GPG public key
 RUN curl -o /home/$USERNAME/pub_key.asc $PUB_KEY_URL \
     && gpg --import /home/$USERNAME/pub_key.asc
