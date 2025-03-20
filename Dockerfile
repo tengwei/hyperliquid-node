@@ -44,7 +44,7 @@ RUN echo 'operator_name,root_ips
           HyperStake,91.134.71.237
           HyperStake,57.129.140.247' > /home/$USERNAME/override_gossip_config.json
 
-
+RUN echo '{ "root_node_ips": [{"Ip": "20.188.6.225"},{"Ip": "74.226.182.22"},{"Ip": "57.182.103.24"}], "try_new_peers": false, "chain": "Mainnet" }' > ~/override_gossip_config.json
 
 # Import GPG public key
 RUN curl -o /home/$USERNAME/pub_key.asc $PUB_KEY_URL \
