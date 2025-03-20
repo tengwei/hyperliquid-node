@@ -61,6 +61,6 @@ docker compose up -d
 ```bash
 docker-compose up -d
 ```
-sudo docker exec -it fbb7202b991f /bin/bash
+sudo docker exec -it 8979c8b64a75 /bin/bash
 
 

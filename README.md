@@ -106,7 +106,8 @@ The node writes data to `~/hl/data`. With default settings, the network will gen
     ```bash
     ./hl-node --chain Mainnet translate-abci-state ~/hl/data/periodic_abci_states/{date}/{height}.rmp /tmp/out.json
     ```
-
+    ./hl-node --chain Mainnet translate-abci-state ~/hl/data/periodic_abci_states/20250320/535500000.rmp /tmp/out.json
+ 
 ---
 
 ## Flags
