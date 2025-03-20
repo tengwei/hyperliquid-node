@@ -48,8 +48,19 @@ To build the node, run:
 docker compose build
 ```
 
+```bash
+docker-compose build
+```
+
 To run the node, run:
 
 ```bash
 docker compose up -d
 ```
+
+```bash
+docker-compose up -d
+```
+sudo docker exec -it 5dbeeaa44c73 /bin/bash
+
+
