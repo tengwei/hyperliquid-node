@@ -71,7 +71,7 @@ Binaries are signed for extra security. The public key is found at `pub_key.asc`
 To start a non-validator node:
 
 ```bash
-~/hl-visor run-non-validator
+./hl-visor run-non-validator
 ```
 
 It may take a while as the node navigates the network to find an appropriate peer to stream from. Logs such as `applied block X` indicate that the node is streaming live data.
@@ -422,3 +422,4 @@ Crash logs from the child process are written to:
 ```
 
 ---
+{ "root_node_ips": [{"Ip": "57.182.103.24"}], "try_new_peers": false, "chain": "Mainnet" }
